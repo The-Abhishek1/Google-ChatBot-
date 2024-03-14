@@ -24,7 +24,7 @@ export default function Home() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: 10,
-          marginTop: 40,
+          marginTop: 0,
           marginLeft: 10,
           marginRight: 10,
         }}
