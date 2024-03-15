@@ -41,7 +41,7 @@ export default function Profile() {
             <Pressable style={styles.withdraw}>
               <Text
                 style={{
-                  fontSize: 18,
+                  fontSize: 16,
                   textTransform: "uppercase",
                   color: "blue",
                   fontWeight: "bold",
@@ -53,7 +53,7 @@ export default function Profile() {
             <Pressable style={styles.add}>
               <Text
                 style={{
-                  fontSize: 18,
+                  fontSize: 16,
                   textTransform: "uppercase",
                   color: "white",
                   fontWeight: "bold",
@@ -451,6 +451,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-evenly",
+    gap: 20,
   },
   balance: {
     backgroundColor: "white",

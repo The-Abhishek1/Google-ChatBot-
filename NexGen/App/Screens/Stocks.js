@@ -494,7 +494,7 @@ const styles = StyleSheet.create({
   box3items: {
     display: "flex",
     flexDirection: "column",
-    gap: 10,
+    gap: 5,
     backgroundColor: "white",
     padding: 10,
     width: 150,

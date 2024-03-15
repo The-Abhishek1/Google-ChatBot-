@@ -63,7 +63,7 @@ export default function Home() {
 }
 function Top() {
   return (
-    <TopTab.Navigator>
+    <TopTab.Navigator style={{ height: 30 }}>
       <TopTab.Screen name="Stocks" component={Stocks} />
       <TopTab.Screen name="F&O" component={FO} />
       <TopTab.Screen name="Mutual Funds" component={MutualFunds} />
