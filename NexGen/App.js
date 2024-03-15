@@ -12,8 +12,8 @@ import Login from "./App/Screens/Login";
 import Chat from "./App/Screens/Chat";
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
-
 import { Ionicons } from "@expo/vector-icons";
+
 function TabNavigator() {
   return (
     <Tab.Navigator

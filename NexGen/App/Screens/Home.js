@@ -16,7 +16,7 @@ import FO from "./FO";
 export default function Home() {
   const navigation = useNavigation();
   return (
-    <View style={{ backgroundColor: "aliceblue" }}>
+    <View style={{ backgroundColor: "aliceblue", marginTop: 30 }}>
       <View
         style={{
           display: "flex",
