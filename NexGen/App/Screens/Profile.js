@@ -2,8 +2,13 @@ import { View, Text, StyleSheet, Pressable, Image } from "react-native";
 import React from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Profile() {
+  const navigation = useNavigation();
+  const logout = () => {
+    navigation.navigate("Signup");
+  };
   return (
     <ScrollView>
       <View style={styles.whole}>
@@ -23,7 +28,12 @@ export default function Profile() {
           <Text style={{ fontSize: 16 }}>Trading Balance</Text>
           <Text style={{ fontSize: 27 }}>₹ 0.00</Text>
           <Text
-            style={{ fontSize: 12, backgroundColor: "aliceblue", padding: 5 }}
+            style={{
+              fontSize: 12,
+              backgroundColor: "aliceblue",
+              padding: 3,
+              borderRadius: 5,
+            }}
           >
             Last updated at 12:55 pm on 15 Mar 2024
           </Text>
@@ -296,10 +306,12 @@ export default function Profile() {
             />
           </View>
         </View>
-        <View style={styles.logout}>
+
+        <Pressable onPress={logout} style={styles.logout}>
           <Text style={{ fontSize: 17, fontWeight: "bold" }}>Logout</Text>
+
           <Text style={{ fontSize: 20 }}>@</Text>
-        </View>
+        </Pressable>
         <Text style={{ padding: 20, textAlign: "center", fontSize: 16 }}>
           App version 1.10
         </Text>
@@ -422,16 +434,16 @@ const styles = StyleSheet.create({
     borderColor: "blue",
     borderWidth: 1,
     padding: 10,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingLeft: 15,
+    paddingRight: 15,
     borderRadius: 5,
   },
   withdraw: {
     borderColor: "blue",
     borderWidth: 1,
     padding: 10,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingLeft: 15,
+    paddingRight: 15,
     borderRadius: 5,
   },
   addwith: {

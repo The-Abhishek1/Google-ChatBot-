@@ -107,7 +107,7 @@ export default function Signup() {
           padding: 20,
           lineHeight: 20,
           textAlign: "center",
-          marginTop: 180,
+          marginTop: 100,
           color: "grey",
         }}
       >
