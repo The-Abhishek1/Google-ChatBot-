@@ -3,6 +3,8 @@ import React from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { useNavigation } from "@react-navigation/native";
+import { Entypo } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 export default function Profile() {
   const navigation = useNavigation();
@@ -11,310 +13,314 @@ export default function Profile() {
   };
   return (
     <ScrollView>
-      <View style={styles.whole}>
-        <View style={styles.top}>
-          <Text style={styles.toptext}>Your Account</Text>
-          <View style={styles.topinside}>
-            <Pressable style={styles.refer}>
-              <Text>Get ₹200</Text>
-            </Pressable>
+      <View style={{ backgroundColor: "aliceblue" }}>
+        <View style={styles.whole}>
+          <View style={styles.top}>
+            <Text style={styles.toptext}>Your Account</Text>
+            <View style={styles.topinside}>
+              <Pressable style={styles.refer}>
+                <Text>Get ₹200</Text>
+              </Pressable>
+              <Image
+                source={require("../Images/rocket.jpg")}
+                style={styles.topimg}
+              />
+            </View>
+          </View>
+          <View style={styles.balance}>
+            <Text style={{ fontSize: 15 }}>Trading Balance</Text>
+            <Text style={{ fontSize: 25 }}>₹ 0.00</Text>
+            <Text
+              style={{
+                fontSize: 12,
+                backgroundColor: "aliceblue",
+                padding: 3,
+                borderRadius: 5,
+              }}
+            >
+              Last updated at 12:55 pm on 15 Mar 2024
+            </Text>
+            <View style={styles.addwith}>
+              <Pressable style={styles.withdraw}>
+                <Text
+                  style={{
+                    fontSize: 15,
+                    textTransform: "uppercase",
+                    color: "blue",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Withdraw
+                </Text>
+              </Pressable>
+              <Pressable style={styles.add}>
+                <Text
+                  style={{
+                    fontSize: 15,
+                    textTransform: "uppercase",
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Add Funds
+                </Text>
+              </Pressable>
+            </View>
+          </View>
+          <View style={styles.account}>
             <Image
               source={require("../Images/rocket.jpg")}
-              style={styles.topimg}
+              style={{ height: 35, width: 35, borderRadius: 50 }}
             />
-          </View>
-        </View>
-        <View style={styles.balance}>
-          <Text style={{ fontSize: 15 }}>Trading Balance</Text>
-          <Text style={{ fontSize: 25 }}>₹ 0.00</Text>
-          <Text
-            style={{
-              fontSize: 12,
-              backgroundColor: "aliceblue",
-              padding: 3,
-              borderRadius: 5,
-            }}
-          >
-            Last updated at 12:55 pm on 15 Mar 2024
-          </Text>
-          <View style={styles.addwith}>
-            <Pressable style={styles.withdraw}>
-              <Text
-                style={{
-                  fontSize: 15,
-                  textTransform: "uppercase",
-                  color: "blue",
-                  fontWeight: "bold",
-                }}
-              >
-                Withdraw
+            <View style={styles.name}>
+              <Text style={{ fontWeight: "bold", fontSize: 16 }}>
+                Abhishek N
               </Text>
-            </Pressable>
-            <Pressable style={styles.add}>
-              <Text
-                style={{
-                  fontSize: 15,
-                  textTransform: "uppercase",
-                  color: "white",
-                  fontWeight: "bold",
-                }}
-              >
-                Add Funds
+              <Text>Client ID: A52393970</Text>
+            </View>
+          </View>
+          <View style={styles.reports}>
+            <View
+              style={{
+                paddingLeft: 10,
+                display: "flex",
+                flexDirection: "column",
+                gap: 10,
+              }}
+            >
+              <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+                Reports and Statements
               </Text>
-            </Pressable>
+              <Text>Modern back office for investors and traders</Text>
+            </View>
+            <View style={styles.items}>
+              <View style={styles.subItems}>
+                <View style={styles.itemswhole}>
+                  <Image
+                    source={require("../Images/rocket.jpg")}
+                    style={styles.img}
+                  />
+
+                  <View style={styles.itemsText}>
+                    <Text style={styles.text1}>Trades and Charges</Text>
+                    <Text style={styles.text2}>
+                      All your charges in one place
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.arrow}>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+              <View style={styles.subItems}>
+                <View style={styles.itemswhole}>
+                  <Image
+                    source={require("../Images/rocket.jpg")}
+                    style={styles.img}
+                  />
+
+                  <View style={styles.itemsText}>
+                    <Text style={styles.text1}>Profit and Loss</Text>
+                    <Text style={styles.text2}>
+                      Analysis profit and loss for your trades
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.arrow}>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+              <View style={styles.subItems}>
+                <View style={styles.itemswhole}>
+                  <Image
+                    source={require("../Images/rocket.jpg")}
+                    style={styles.img}
+                  />
+
+                  <View style={styles.itemsText}>
+                    <Text style={styles.text1}>Statement/Ledger</Text>
+                    <Text style={styles.text2}>
+                      Your transactions with InvestWise
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.arrow}>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+              <View style={styles.subItems}>
+                <View style={styles.itemswhole}>
+                  <Image
+                    source={require("../Images/rocket.jpg")}
+                    style={styles.img}
+                  />
+
+                  <View style={styles.itemsText}>
+                    <Text style={styles.text1}>Fund Transactions</Text>
+                    <Text style={styles.text2}>
+                      Add Funds and Withdraw history
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.arrow}>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+              <View style={styles.subItems}>
+                <View style={styles.itemswhole}>
+                  <Image
+                    source={require("../Images/rocket.jpg")}
+                    style={styles.img}
+                  />
+
+                  <View style={styles.itemsText}>
+                    <Text style={styles.text1}>Download Reports</Text>
+                    <Text style={styles.text2}>in XLSX</Text>
+                  </View>
+                </View>
+                <View style={styles.arrow}>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+            </View>
           </View>
-        </View>
-        <View style={styles.account}>
-          <Image
-            source={require("../Images/rocket.jpg")}
-            style={{ height: 45, width: 45, borderRadius: 50 }}
-          />
-          <View style={styles.name}>
-            <Text style={{ fontWeight: "bold", fontSize: 16 }}>Abhishek N</Text>
-            <Text>Client ID: A52393970</Text>
-          </View>
-        </View>
-        <View style={styles.reports}>
-          <View
-            style={{
-              paddingLeft: 10,
-              display: "flex",
-              flexDirection: "column",
-              gap: 10,
-            }}
-          >
+          <View style={styles.help}>
             <Text style={{ fontSize: 17, fontWeight: "bold" }}>
-              Reports and Statements
+              Help & Support
             </Text>
-            <Text>Modern back office for investors and traders</Text>
-          </View>
-          <View style={styles.items}>
-            <View style={styles.subItems}>
-              <View style={styles.itemswhole}>
-                <Image
-                  source={require("../Images/rocket.jpg")}
-                  style={styles.img}
-                />
-
-                <View style={styles.itemsText}>
-                  <Text style={styles.text1}>Trades and Charges</Text>
-                  <Text style={styles.text2}>
-                    All your charges in one place
-                  </Text>
+            <Text style={{ marginTop: 10, fontSize: 15, marginBottom: 10 }}>
+              How can we help you?
+            </Text>
+            <View style={styles.wholeitems}>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>Ask InvestWise</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
                 </View>
               </View>
-              <View style={styles.arrow}>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.subItems}>
-              <View style={styles.itemswhole}>
-                <Image
-                  source={require("../Images/rocket.jpg")}
-                  style={styles.img}
-                />
-
-                <View style={styles.itemsText}>
-                  <Text style={styles.text1}>Profit and Loss</Text>
-                  <Text style={styles.text2}>
-                    Analysis profit and loss for your trades
-                  </Text>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>Contact Us</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
                 </View>
               </View>
-              <View style={styles.arrow}>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.subItems}>
-              <View style={styles.itemswhole}>
-                <Image
-                  source={require("../Images/rocket.jpg")}
-                  style={styles.img}
-                />
-
-                <View style={styles.itemsText}>
-                  <Text style={styles.text1}>Statement/Ledger</Text>
-                  <Text style={styles.text2}>
-                    Your transactions with InvestWise
-                  </Text>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>Rate Us</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
                 </View>
               </View>
-              <View style={styles.arrow}>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.subItems}>
-              <View style={styles.itemswhole}>
-                <Image
-                  source={require("../Images/rocket.jpg")}
-                  style={styles.img}
-                />
-
-                <View style={styles.itemsText}>
-                  <Text style={styles.text1}>Fund Transactions</Text>
-                  <Text style={styles.text2}>
-                    Add Funds and Withdraw history
-                  </Text>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>FAQs</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
                 </View>
               </View>
-              <View style={styles.arrow}>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.subItems}>
-              <View style={styles.itemswhole}>
-                <Image
-                  source={require("../Images/rocket.jpg")}
-                  style={styles.img}
-                />
-
-                <View style={styles.itemsText}>
-                  <Text style={styles.text1}>Download Reports</Text>
-                  <Text style={styles.text2}>in XLSX</Text>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>Call Us</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
                 </View>
               </View>
-              <View style={styles.arrow}>
-                <Text style={styles.arrowtext}>></Text>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>Settings</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
+              </View>
+              <View style={styles.helpItems}>
+                <View style={styles.helpwhole}>
+                  <Image
+                    source={require("../Images/google.png")}
+                    style={styles.img}
+                  />
+                  <Text style={styles.helptext}>About Us</Text>
+                </View>
+                <View>
+                  <Entypo name="triangle-right" size={22} color="black" />
+                </View>
               </View>
             </View>
           </View>
-        </View>
-        <View style={styles.help}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>
-            Help & Support
+          <View style={styles.join}>
+            <Text
+              style={{
+                fontSize: 17,
+                textTransform: "uppercase",
+                textAlign: "center",
+              }}
+            >
+              Join our community
+            </Text>
+            <View style={styles.link}>
+              <Image
+                source={require("../Images/github.png")}
+                style={styles.img}
+              />
+              <Image
+                source={require("../Images/github.png")}
+                style={styles.img}
+              />
+              <Image
+                source={require("../Images/github.png")}
+                style={styles.img}
+              />
+              <Image
+                source={require("../Images/github.png")}
+                style={styles.img}
+              />
+              <Image
+                source={require("../Images/github.png")}
+                style={styles.img}
+              />
+            </View>
+          </View>
+
+          <Pressable onPress={logout} style={styles.logout}>
+            <Text style={{ fontSize: 17, fontWeight: "bold" }}>Logout</Text>
+
+            <AntDesign name="logout" size={20} color="black" />
+          </Pressable>
+          <Text style={{ padding: 20, textAlign: "center", fontSize: 16 }}>
+            App version 1.10
           </Text>
-          <Text style={{ marginTop: 10, fontSize: 15, marginBottom: 10 }}>
-            How can we help you?
-          </Text>
-          <View style={styles.wholeitems}>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>Ask InvestWise</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>Contact Us</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>Rate Us</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>FAQs</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>Call Us</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>Settings</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-            <View style={styles.helpItems}>
-              <View style={styles.helpwhole}>
-                <Image
-                  source={require("../Images/google.png")}
-                  style={styles.img}
-                />
-                <Text style={styles.helptext}>About Us</Text>
-              </View>
-              <View>
-                <Text style={styles.arrowtext}>></Text>
-              </View>
-            </View>
-          </View>
         </View>
-        <View style={styles.join}>
-          <Text
-            style={{
-              fontSize: 17,
-              textTransform: "uppercase",
-              textAlign: "center",
-            }}
-          >
-            Join our community
-          </Text>
-          <View style={styles.link}>
-            <Image
-              source={require("../Images/github.png")}
-              style={styles.img}
-            />
-            <Image
-              source={require("../Images/github.png")}
-              style={styles.img}
-            />
-            <Image
-              source={require("../Images/github.png")}
-              style={styles.img}
-            />
-            <Image
-              source={require("../Images/github.png")}
-              style={styles.img}
-            />
-            <Image
-              source={require("../Images/github.png")}
-              style={styles.img}
-            />
-          </View>
-        </View>
-
-        <Pressable onPress={logout} style={styles.logout}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Logout</Text>
-
-          <Text style={{ fontSize: 20 }}>@</Text>
-        </Pressable>
-        <Text style={{ padding: 20, textAlign: "center", fontSize: 16 }}>
-          App version 1.10
-        </Text>
       </View>
     </ScrollView>
   );
@@ -330,6 +336,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     paddingLeft: 30,
     borderRadius: 7,
+    paddingRight: 20,
   },
   join: {
     padding: 10,
@@ -363,6 +370,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
     padding: 10,
     backgroundColor: "white",
     borderRadius: 7,
@@ -382,17 +390,19 @@ const styles = StyleSheet.create({
   itemsText: {
     display: "flex",
     flexDirection: "column",
-    gap: 5,
+    flexWrap: "wrap",
+    gap: 3,
   },
   itemswhole: {
     display: "flex",
     flexDirection: "row",
-    gap: 20,
+    alignItems: "center",
+    gap: 10,
   },
   items: {
     display: "flex",
     flexDirection: "column",
-    gap: 25,
+    gap: 30,
     backgroundColor: "aliceblue",
     padding: 10,
     marginTop: 20,
@@ -406,8 +416,8 @@ const styles = StyleSheet.create({
   },
   img: {
     borderRadius: 50,
-    height: 40,
-    width: 40,
+    height: 25,
+    width: 25,
   },
   reports: {
     backgroundColor: "white",
@@ -426,7 +436,7 @@ const styles = StyleSheet.create({
   name: {
     display: "flex",
     flexDirection: "column",
-    gap: 10,
+    gap: 5,
     marginLeft: 20,
   },
   add: {
@@ -480,16 +490,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   topimg: {
-    height: 45,
-    width: 45,
+    height: 35,
+    width: 35,
     borderRadius: 50,
   },
   refer: {
     borderColor: "black",
     borderWidth: 1,
-    paddingLeft: 25,
-    paddingRight: 25,
-    padding: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
+    padding: 7,
     borderRadius: 20,
   },
   topinside: {

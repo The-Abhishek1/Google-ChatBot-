@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import { supabase } from "../SupaBase/SupabaseConfig";
 
 export default function Signup() {
   const navigation = useNavigation();

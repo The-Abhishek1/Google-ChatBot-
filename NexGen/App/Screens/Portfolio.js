@@ -1,7 +1,8 @@
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
 import React from "react";
 import { ScrollView } from "react-native-gesture-handler";
-
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 export default function Portfolio() {
   return (
     <ScrollView>
@@ -45,9 +46,23 @@ export default function Portfolio() {
             </View>
           </View>
         </View>
-        <Text style={{ textAlign: "center", margin: 10 }}>
-          Your investment returns may be indicative
-        </Text>
+        <View
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+          <Text style={{ textAlign: "center", margin: 10 }}>
+            Your investment returns may be indicative
+          </Text>
+          <MaterialCommunityIcons
+            name="alert-circle-outline"
+            size={24}
+            color="black"
+          />
+        </View>
         <View style={styles.orderItems}>
           <Text style={{ color: "gray", marginLeft: 10 }}>Invested Stocks</Text>
           <View style={styles.box2}>
@@ -67,7 +82,7 @@ export default function Portfolio() {
               </View>
               <View style={styles.insideValueNames1}>
                 <Text style={{ color: "gray" }}>0.03765 AXS</Text>
-                <Text style={{ color: "black" }}>></Text>
+                <AntDesign name="caretright" size={10} color="black" />
               </View>
             </View>
             <View style={styles.investedvalues}>
@@ -102,7 +117,7 @@ export default function Portfolio() {
               </View>
               <View style={styles.insideValueNames1}>
                 <Text style={{ color: "gray" }}>0.03765 AXS</Text>
-                <Text style={{ color: "black" }}>></Text>
+                <AntDesign name="caretright" size={10} color="black" />
               </View>
             </View>
             <View style={styles.investedvalues}>
@@ -137,7 +152,7 @@ export default function Portfolio() {
               </View>
               <View style={styles.insideValueNames1}>
                 <Text style={{ color: "gray" }}>0.03765 AXS</Text>
-                <Text style={{ color: "black" }}>></Text>
+                <AntDesign name="caretright" size={10} color="black" />
               </View>
             </View>
             <View style={styles.investedvalues}>
@@ -172,7 +187,7 @@ export default function Portfolio() {
               </View>
               <View style={styles.insideValueNames1}>
                 <Text style={{ color: "gray" }}>0.03765 AXS</Text>
-                <Text style={{ color: "black" }}>></Text>
+                <AntDesign name="caretright" size={10} color="black" />
               </View>
             </View>
             <View style={styles.investedvalues}>
@@ -207,7 +222,7 @@ export default function Portfolio() {
               </View>
               <View style={styles.insideValueNames1}>
                 <Text style={{ color: "gray" }}>0.03765 AXS</Text>
-                <Text style={{ color: "black" }}>></Text>
+                <AntDesign name="caretright" size={10} color="black" />
               </View>
             </View>
             <View style={styles.investedvalues}>

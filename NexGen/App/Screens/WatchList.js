@@ -10,7 +10,7 @@ import {
 import React from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import { Button } from "react-native-paper";
-
+import { MaterialIcons } from "@expo/vector-icons";
 export default function WatchList() {
   return (
     <ScrollView>
@@ -85,9 +85,16 @@ export default function WatchList() {
               alignItems: "center",
               justifyContent: "space-between",
               marginLeft: 10,
+              marginTop: 10,
             }}
           >
-            <View style={{ display: "flex", flexDirection: "row", gap: 10 }}>
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: 10,
+              }}
+            >
               <TouchableOpacity style={styles.button}>
                 <Text>My WatchList</Text>
               </TouchableOpacity>
@@ -97,7 +104,7 @@ export default function WatchList() {
             </View>
             <View>
               <TouchableOpacity>
-                <Text style={{ fontSize: 25 }}>+</Text>
+                <MaterialIcons name="add-to-photos" size={24} color="black" />
               </TouchableOpacity>
             </View>
           </View>
@@ -159,13 +166,16 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   whole: {
-    minHeight: Dimensions.get("screen").height * 0.9,
+    minHeight: Dimensions.get("screen").height * 0.91,
     backgroundColor: "aliceblue",
   },
   watch: {
     display: "flex",
     flexDirection: "column",
     gap: 2,
+    paddingRight: 10,
+    paddingLeft: 10,
+    marginTop: 10,
   },
   watchItems: {
     display: "flex",

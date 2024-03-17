@@ -330,6 +330,7 @@ const styles = StyleSheet.create({
   whole: {
     height: "auto",
     backgroundColor: "aliceblue",
+    paddingBottom: 60,
   },
   footer: {
     height: 220,
