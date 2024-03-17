@@ -25,8 +25,8 @@ export default function Profile() {
           </View>
         </View>
         <View style={styles.balance}>
-          <Text style={{ fontSize: 16 }}>Trading Balance</Text>
-          <Text style={{ fontSize: 27 }}>₹ 0.00</Text>
+          <Text style={{ fontSize: 15 }}>Trading Balance</Text>
+          <Text style={{ fontSize: 25 }}>₹ 0.00</Text>
           <Text
             style={{
               fontSize: 12,
@@ -41,7 +41,7 @@ export default function Profile() {
             <Pressable style={styles.withdraw}>
               <Text
                 style={{
-                  fontSize: 16,
+                  fontSize: 15,
                   textTransform: "uppercase",
                   color: "blue",
                   fontWeight: "bold",
@@ -53,7 +53,7 @@ export default function Profile() {
             <Pressable style={styles.add}>
               <Text
                 style={{
-                  fontSize: 16,
+                  fontSize: 15,
                   textTransform: "uppercase",
                   color: "white",
                   fontWeight: "bold",
@@ -70,7 +70,7 @@ export default function Profile() {
             style={{ height: 45, width: 45, borderRadius: 50 }}
           />
           <View style={styles.name}>
-            <Text style={{ fontWeight: "bold", fontSize: 17 }}>Abhishek N</Text>
+            <Text style={{ fontWeight: "bold", fontSize: 16 }}>Abhishek N</Text>
             <Text>Client ID: A52393970</Text>
           </View>
         </View>
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   helptext: {
-    fontSize: 17,
+    fontSize: 15,
   },
   helpwhole: {
     display: "flex",
@@ -374,10 +374,10 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   text1: {
-    fontSize: 17,
+    fontSize: 15,
   },
   arrowtext: {
-    fontSize: 25,
+    fontSize: 22,
   },
   itemsText: {
     display: "flex",

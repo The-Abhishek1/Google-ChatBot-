@@ -66,9 +66,9 @@ export default function Stocks() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    gap: 10,
-                    height: 100,
-                    width: 117,
+                    gap: 3,
+                    height: 80,
+                    width: 110,
                     borderRadius: 10,
                     marginTop: 10,
                     marginLeft: 20,
@@ -76,9 +76,11 @@ export default function Stocks() {
                     borderWidth: 1,
                   }}
                 >
-                  <Text>{item.key}</Text>
-                  <Text style={{ color: "blue" }}>{item.marketValue}</Text>
-                  <Text>{item.highLow}</Text>
+                  <Text style={{ fontSize: 12 }}>{item.key}</Text>
+                  <Text style={{ color: "blue", fontSize: 12 }}>
+                    {item.marketValue}
+                  </Text>
+                  <Text style={{ fontSize: 12 }}>{item.highLow}</Text>
                 </View>
               )}
             />
@@ -108,23 +110,23 @@ export default function Stocks() {
               <View style={styles.box2items}>
                 <Image
                   source={require("../Images/google.png")}
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 30, width: 30 }}
                 />
-                <Text>IPO</Text>
+                <Text style={{ fontSize: 13 }}>IPO</Text>
               </View>
               <View style={styles.box2items}>
                 <Image
                   source={require("../Images/github.png")}
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 30, width: 30 }}
                 />
-                <Text>Events</Text>
+                <Text style={{ fontSize: 13 }}>Events</Text>
               </View>
               <View style={styles.box2items}>
                 <Image
                   source={require("../Images/facebook.png")}
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 30, width: 30 }}
                 />
-                <Text>All Stocks</Text>
+                <Text style={{ fontSize: 13 }}>All Stocks</Text>
               </View>
             </View>
           </View>
@@ -143,7 +145,7 @@ export default function Stocks() {
               <View style={styles.box3items}>
                 <Image
                   source={require("../Images/email.png")}
-                  style={{ height: 45, width: 45 }}
+                  style={{ height: 30, width: 30 }}
                 />
                 <Text style={[styles.box3text1, styles.box3text2]}>
                   Tata Steel
@@ -156,7 +158,7 @@ export default function Stocks() {
               <View style={styles.box3items}>
                 <Image
                   source={require("../Images/email.png")}
-                  style={{ height: 45, width: 45 }}
+                  style={{ height: 30, width: 30 }}
                 />
                 <Text style={[styles.box3text1, styles.box3text2]}>
                   Tata Steel
@@ -169,7 +171,7 @@ export default function Stocks() {
               <View style={styles.box3items}>
                 <Image
                   source={require("../Images/email.png")}
-                  style={{ height: 45, width: 45 }}
+                  style={{ height: 30, width: 30 }}
                 />
                 <Text style={[styles.box3text1, styles.box3text2]}>
                   Tata Steel
@@ -182,7 +184,7 @@ export default function Stocks() {
               <View style={styles.box3items}>
                 <Image
                   source={require("../Images/email.png")}
-                  style={{ height: 45, width: 45 }}
+                  style={{ height: 30, width: 30 }}
                 />
                 <Text style={[styles.box3text1, styles.box3text2]}>
                   Tata Steel
@@ -373,7 +375,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   name: {
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: "bold",
   },
   vary: {
@@ -401,8 +403,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   glimg: {
-    height: 40,
-    width: 40,
+    height: 30,
+    width: 30,
   },
   box4buttontouch2: {
     borderColor: "black",
@@ -469,7 +471,7 @@ const styles = StyleSheet.create({
     padding: 10,
     display: "flex",
     alignItems: "center",
-    height: 90,
+    height: 75,
     width: 85,
     gap: 10,
     borderRadius: 10,
@@ -507,7 +509,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   box3text2: {
-    fontSize: 15,
+    fontSize: 13,
   },
   box3text3: {
     color: "green",
