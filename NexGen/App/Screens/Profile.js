@@ -33,9 +33,8 @@ export default function Profile() {
             <Text
               style={{
                 fontSize: 12,
-                backgroundColor: "aliceblue",
-                padding: 3,
-                borderRadius: 5,
+                marginTop: -5,
+                marginBottom: 10,
               }}
             >
               Last updated at 12:55 pm on 15 Mar 2024
@@ -335,7 +334,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginTop: 15,
     paddingLeft: 30,
-    borderRadius: 7,
+    borderRadius: 10,
     paddingRight: 20,
   },
   join: {
@@ -372,14 +371,15 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     padding: 10,
-    backgroundColor: "white",
     borderRadius: 7,
   },
   help: {
     display: "flex",
     flexDirection: "column",
-    backgroundColor: "aliceblue",
+    backgroundColor: "white",
     padding: 10,
+    marginTop: 10,
+    borderRadius: 10,
   },
   text1: {
     fontSize: 15,
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     gap: 30,
-    backgroundColor: "aliceblue",
+
     padding: 10,
     marginTop: 20,
     borderRadius: 7,
@@ -423,6 +423,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginTop: 15,
     padding: 10,
+    borderRadius: 10,
   },
   account: {
     display: "flex",
@@ -432,6 +433,7 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
     marginTop: 15,
     backgroundColor: "white",
+    borderRadius: 10,
   },
   name: {
     display: "flex",
@@ -470,6 +472,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     gap: 10,
     marginTop: 10,
+    borderRadius: 10,
   },
   whole: {
     height: "auto",

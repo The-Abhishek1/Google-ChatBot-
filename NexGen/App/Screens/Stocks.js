@@ -19,7 +19,6 @@ export default function Stocks() {
               paddingBottom: 10,
               paddingLeft: 5,
               paddingRight: 5,
-              height: 160,
               backgroundColor: "aliceblue",
             }}
           >
@@ -90,9 +89,8 @@ export default function Stocks() {
             style={{
               paddingLeft: 5,
               paddingRight: 5,
-              height: 160,
               backgroundColor: "aliceblue",
-              marginTop: 5,
+              marginTop: -5,
             }}
           >
             <Text
@@ -134,7 +132,6 @@ export default function Stocks() {
             style={{
               paddingLeft: 5,
               paddingRight: 5,
-              height: 395,
               backgroundColor: "aliceblue",
               marginTop: 5,
             }}
@@ -332,6 +329,7 @@ const styles = StyleSheet.create({
     backgroundColor: "aliceblue",
     paddingBottom: 60,
   },
+
   footer: {
     height: 220,
     backgroundColor: "aliceblue",
@@ -349,7 +347,6 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   sn: {
-    height: 400,
     backgroundColor: "aliceblue",
     marginTop: 5,
     padding: 5,
@@ -428,13 +425,13 @@ const styles = StyleSheet.create({
   box4smallbutton: {
     display: "flex",
     flexDirection: "row",
-    gap: 25,
+    gap: 15,
     alignItems: "center",
     marginTop: 5,
     paddingLeft: 20,
   },
   box4button2: {
-    fontSize: 16,
+    fontSize: 13,
   },
   box4button: {
     display: "flex",
@@ -445,11 +442,10 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
   },
   box4button1: {
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: "bold",
   },
   box4: {
-    height: 460,
     marginTop: 5,
     display: "flex",
     backgroundColor: "aliceblue",
@@ -457,7 +453,6 @@ const styles = StyleSheet.create({
   },
 
   box2item: {
-    height: 120,
     display: "flex",
     flexDirection: "row",
     alignItems: "center",

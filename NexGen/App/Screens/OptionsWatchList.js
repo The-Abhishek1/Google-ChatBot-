@@ -12,22 +12,10 @@ import { ScrollView } from "react-native-gesture-handler";
 import { Button } from "react-native-paper";
 import { MaterialIcons } from "@expo/vector-icons";
 
-export default function Orders() {
+export default function OptionsWatchList() {
   return (
     <ScrollView>
       <View style={styles.whole}>
-        <Text
-          style={{
-            marginTop: 40,
-            fontSize: 17,
-            fontWeight: "bold",
-            marginLeft: 20,
-            paddingLeft: 5,
-            marginBottom: 10,
-          }}
-        >
-          Orders
-        </Text>
         <View style={styles.list}>
           <View
             style={{
@@ -56,10 +44,10 @@ export default function Orders() {
                 }}
               >
                 <TouchableOpacity style={styles.button}>
-                  <Text>Open Orders</Text>
+                  <Text>My OptionsList</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.button}>
-                  <Text>Positions</Text>
+                  <Text>My OptionsList</Text>
                 </TouchableOpacity>
               </View>
               <View>

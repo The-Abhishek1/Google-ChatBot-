@@ -16,6 +16,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Foundation } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import WatchListTabBar from "./App/Screens/WatchListTabBar";
 
 function TabNavigator() {
   return (
@@ -56,7 +57,7 @@ function TabNavigator() {
       <Tab.Screen
         name="WatchList"
         options={{ title: "Watchlist" }}
-        component={WatchList}
+        component={WatchListTabBar}
       />
 
       <Tab.Screen
